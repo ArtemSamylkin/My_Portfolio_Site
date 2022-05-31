@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+*{
+    margin: 0%;
+}
+@keyframes boton{
+    0%{
+        box-shadow:0px 0px 20px 5px rgb(0, 115, 255);
+    }
+    50%{
+        box-shadow:0px 0px 10px 1px rgb(0, 115, 255);
+    }
+    100%{
+        box-shadow: 0px 0px 20px 5px rgb(0, 115, 255);
+    }
+}
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: static;
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.navigate{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: static;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.klimg{
+    width: 2000px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+*{
+    margin: 0px;
+    font-family: "Roboto","sans-serif";
+}
+.one{
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fmchost.ru%2Ffiles%2Fimg%2Fpython.png&imgrefurl=https%3A%2F%2Fmchost.ru%2Farticles%2Fchto-takoe-python%2F&tbnid=K8-3-zhe7Q9IZM&vet=12ahUKEwiju5bAm4X4AhXKmIsKHb_4DwMQMygBegUIARDSAQ..i&docid=2LJgs2u3SUab8M&w=1200&h=356&q=python&ved=2ahUKEwiju5bAm4X4AhXKmIsKHb_4DwMQMygBegUIARDSAQ");
+}
+.two{
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F18%2FISO_C%252B%252B_Logo.svg%2F1200px-ISO_C%252B%252B_Logo.svg.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FC%252B%252B&tbnid=dStXEntGr-_3kM&vet=12ahUKEwiYmt38m4X4AhVYuSoKHfP6BzcQMygAegUIARDQAQ..i&docid=bnoQF5njVnaw-M&w=1200&h=1349&itg=1&q=c%2B%2B&ved=2ahUKEwiYmt38m4X4AhVYuSoKHfP6BzcQMygAegUIARDQAQ");
+}
+.three{
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fastwellsoft.com%2Fassets%2Fimages%2Fblog%2FxHTML5-CSS3.jpg.pagespeed.ic._tLdLKjy7B.jpg&imgrefurl=https%3A%2F%2Fastwellsoft.com%2Fru%2Fblog%2Ftehnology%2Fhtml5-css3.html&tbnid=Fl49hD8kHkULuM&vet=12ahUKEwiawKiXnIX4AhUExosKHQkTAfUQMygAegUIARCvAQ..i&docid=-j9wC2eRjcZhYM&w=649&h=433&q=Html5%20css3&hl=ru&ved=2ahUKEwiawKiXnIX4AhUExosKHQkTAfUQMygAegUIARCvAQ");
+}
+.name{
+    font-size: 1.2em;
+}
+.head{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+li{
+    list-style-type: none;
+    margin-right: 15px;
+    height: 25px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+.m_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.d_menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu_item{
+    display: flex;
+    text-decoration: none;
+    color:black;
+    font-size: 0.8em;
+}
+.menu_item:hover{
+    font-size: 0.9em;
+    color: blue;
+}
+.menu_item:hover{
+    font-size: 0.9em;
+    color: blue;
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
+}
+.mbtn{
+    position: relative;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 3px white solid;
+    background-color: black;
+    animation: boton 3s infinite;
+    box-shadow: 0px 0px 10px 1px rgb(0, 115, 255);
+}
+.mobile-nav{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 100%; 
+    transition: left 0.5s;
+}
+.small_text{
+    color: black;
+}
+.opened{
+    left:0%;
+}
+.opened1{
+    margin: 50px;
+}
+.img{
+    margin-top: 20px;
+    width: 30%;
+}
+hr{
+    margin:0 20px;
+}
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.txt{
+    font-size: 0.9em;
+}
+*{
+    font-size: 1.1em;
+}
+.my_1{
+    font-size: 1.6em;
+}
+.AboutMeh2{
+    font-size: 1.5em;
+}
+.opisanie{
+    text-align: center;
+    padding: 5px;
+}
+.my{
+    color:blueviolet;
+}
+.AboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:0px
+}
+.sep_item{
+    color: grey;
+    font-size: 0.8em;
+    width: 300px;
+    line-height: 20px;
+}
+.separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.openbtn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+    border: none;
+}
+.dimg{
+    height: 20px;
+    background-color: #eee;
+    width: 100%;
+    overflow: hidden;
+}
+.modelsd{
+    display: flex;
+    justify-content: center;
+}
+.dbtn{
+    background-color:rgba(0, 0, 0, 0);
+    position: relative;
+    left: 10%;
+}
+.phone{
+    text-align: right;
+    margin-left: 10px;
+}
+.email{
+    text-align: left;
+    margin-right: 10px;
+}
+
+.imgbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media all and (min-width: 320px) {
+    .modelimg{
+        margin: 5px;
+    }
+    .desktop-nav{
+        display:none;
+    }
+    .imgbox{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modelimg{
+        width: 350px;
+    }
+    *{
+        font-size: 1em;
+    }
+    .opisanie{
+        margin: 10px;
+        border: 10px;
+    }
+    .klimg{
+        height: 200px;
+    }
+}
+@media all and (min-width: 768px) {
+    li{
+        display: inline;
+        margin-left: 30px;
+    }
+    .mbtn{
+        display: none;
+    }
+    .mobile-nav{
+        display:none;
+    }
+    .head{
+        justify-content:center ;
+    }
+    .openbtn{
+        height: 30px;
+        width: 30px;
+        font-size: 25px;
+    }
+    .dimg{
+        height: 30px;
+    }
+    *{
+        font-size: 1.1em;
+    }
+    .menu_item:hover{
+        font-size: 0.5em;
+        color: blue;
+    }
+    .sep_item{
+        font-size: 0.6em;
+    }
+    .opisanie{
+        text-align: center;
+        margin: 25px;
+        padding: 25px;
+    }
+    .my{
+        color:blueviolet;
+    }
+    .text{
+        font-size: 0.8em;
+    }
+    .dmenu_item{
+        font-size: 0.6em;
+    }
+    .desktop-nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .klimg{
+        height: 500px;
+    }
+    .imgbox{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .head{
+        position: fixed;
+        top: 5px;
+        left: 10%;
+    }
+    }
+@media all and (min-width: 1024px) {
+    .mobile-nav{
+        display:none;
+    }
+    .menu_item{
+        font-size: 0.7em;
+        width: 125px;
+    }
+    .menu_item:hover{
+        font-size: 0.8em;
+    }
+    .openbtn{
+        height: 40px;
+        width: 40px;
+        font-size: 35px;
+    }
+    .dimg{
+        height: 40px;
+    }
+    .mbtn{
+        display: none;
+    }
+    .desktop-nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .head{
+        position: fixed;
+        top: 5px;
+        left: 10%;
+    }
+    .txt{
+        font-size: 1em;
+    }
+    .text{
+        font-size: 50px;
+    }
+    .modelimg{
+        margin: 5px;
+        width: 25%;
+    }
+    .head{
+        justify-content:center ;
+    }
+    .imgbox{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.d_menu_close{
+    position: static;
+}
+.openimg{
+    height: auto;
+}
